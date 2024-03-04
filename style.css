@@ -1,0 +1,128 @@
+html{
+    background:linear-gradient(to bottom right,#03045e,#ade8f4);
+    padding: 0 0 3% 0;
+}
+body {
+    margin: 200;
+    font-family: "Poppins", sans-serif; /* Using Poppins font */
+    background-color: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Colorful background */
+    color: #90e0ef; /* Text color */
+}
+
+.container {
+    background-color: #023e8a;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    max-width: 800px;
+    border-radius: 10px;
+    padding: 40px;
+    transition: all 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    font-family: "Open Sans", sans-serif; /* Changing font for headings */
+    color: #333; /* Heading color */
+    margin-bottom: 20px;
+}
+.container h1{
+    font-size: 45px;
+}
+
+.container p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666; /* Paragraph color */
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+form input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    width: 60%;
+}
+
+form input[type="submit"] {
+    background-color: #0077b6;
+    color: #caf0f8;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #03045e; /* darker shade on hover */
+}
+
+.icon img {
+    width: 150px;
+    height: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.temperature {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.description {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.details > div {
+    padding: 20px;
+    background-color:#0077b6;
+    margin: 10px;
+    flex: 1;
+    border-radius: 5px;
+    font-size: 25px;
+    text-align: center;
+    min-height: 45px;
+    transition: background-color 0.3s ease; /* hover effect transition */
+}
+
+.details > div:hover {
+    background-color:#00b4d8 ; /* lighter shade on hover */
+}
+
+@media(max-width:768px) {
+    form {
+        flex-direction: column;
+    }
+
+    form input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
