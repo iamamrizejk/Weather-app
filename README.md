@@ -1,4 +1,4 @@
-# Weather App
+# Weather App 🌤
 
 This is a simple weather application that allows users to check the current weather conditions of any location. It utilizes the OpenWeatherMap API to fetch weather data.
 
